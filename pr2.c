@@ -23,3 +23,13 @@ int main() {
     for (int i = 0; i < r; i++) {
         scanf("%d", &numbers[i]);
     }
+
+    int result = numbers[0];
+    for (int i = 1; i < r; i++) {
+        result = lcm(result, numbers[i]);
+    }
+
+    printf("Найменше спільне кратне: %d\n", result);
+
+    return 0;
+}
